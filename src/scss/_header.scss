@@ -1,0 +1,107 @@
+#Header {
+    // padding: 20px 0;
+    .header-wrapper {
+        border-bottom: 1px solid #ccc;
+        // padding: 20px 0;
+   .lhs {
+       width: 33.3%;
+       display: inline-block;
+       li {
+           display: inline-block;
+        //    border-right: 1px solid #ccc;
+           padding-right: 10px;
+           &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 75px;
+            background-color: #ccc;
+            top: 0px;
+           }
+           i {
+               margin-right: 10px;
+           }
+       }
+   }
+   .search-container {
+       width: 33.3%;
+       display: inline-block;
+       text-align: center;
+       position: relative;
+       input {
+        color: #ccc;
+        width: 250px;
+        padding: 10px;
+        border-radius: 30px;
+        border-color: #ccc;
+        border: 1px solid #ccc;
+        &:focus {
+            outline: none;
+        }
+       }
+       i {
+           &:before {
+            position: absolute;
+            right: 117px;
+            top: 14px;
+            color: #ccc;
+           }
+       }
+   }
+   .rhs {
+    width: 32%;
+    text-align: right;
+    display: inline-block;
+       li {
+           display: inline-block;
+        //    border-right: 1px solid #ccc;
+           padding-right: 10px;
+           vertical-align: middle;
+           &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 75px;
+            background-color: #ccc;
+            top: 0px;
+           }
+           i {
+               margin-right: 10px;
+           }
+           &:first-child {
+               &:before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 75px;
+                background-color: #ccc;
+                top: 0px;
+               }
+               i {
+                   margin-left: 10px;
+               }
+           }
+           &:last-child {
+               &:after {
+                   width: 0px;
+               }
+           }
+           &.web {
+            padding-right: 0;
+        }
+       }
+   }
+   img {
+       width: 75px;
+       height: auto;
+   }
+   .name {
+       color: #ff0000;
+   }
+   .designation {
+    font-size: 14px;
+    text-align: left;
+    color: #ccc;
+   }
+}
+}
